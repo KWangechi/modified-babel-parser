@@ -24,6 +24,9 @@
   },
   "main": "./lib/index.js",
   "types": "./typings/babel-parser.d.ts",
+  "scripts": {
+    "build": "rollup -c"
+  },
   "files": [
     "bin",
     "lib",
@@ -35,7 +38,7 @@
   },
   "# dependencies": "This package doesn't actually have runtime dependencies. @babel/types is only needed for type definitions.",
   "dependencies": {
-    "@babel/types": "^7.27.0"
+    "@babel/types": "^7.26.10"
   },
   "devDependencies": {
     "@babel/code-frame": "^7.26.2",
@@ -43,7 +46,12 @@
     "@babel/helper-fixtures": "^7.26.0",
     "@babel/helper-string-parser": "^7.25.9",
     "@babel/helper-validator-identifier": "^7.25.9",
-    "charcodes": "^0.2.0"
+    "@rollup/plugin-commonjs": "^28.0.3",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-terser": "^0.4.4",
+    "charcodes": "^0.2.0",
+    "rollup": "^4.40.1",
+    "rollup-plugin-typescript2": "^0.36.0"
   },
   "bin": "./bin/babel-parser.js",
   "type": "module"
