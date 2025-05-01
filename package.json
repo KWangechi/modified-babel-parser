@@ -1,6 +1,6 @@
 {
   "name": "@kwangechi/modified-babel-parser",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A modified version of @babel/parser to support JSX ::propA shorthand syntax",
   "author": "Rachel Karanja (https://github.com/KWangechi)",
   "license": "MIT",
@@ -27,7 +27,8 @@
     "bin",
     "lib",
     "typings/babel-parser.d.ts",
-    "index.cjs"
+    "index.cjs",
+    "types"
   ],
   "engines": {
     "node": ">=6.0.0"
