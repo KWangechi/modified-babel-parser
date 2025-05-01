@@ -1,6 +1,6 @@
 {
-  "name": "@kwangechi/modified-babel-parser",
-  "version": "1.0.4",
+  "name": "@kwangechi/modified-parser",
+  "version": "1.0.5",
   "description": "A modified version of @babel/parser to support JSX ::propA shorthand syntax",
   "author": "Rachel Karanja (https://github.com/KWangechi)",
   "license": "MIT",
@@ -27,33 +27,26 @@
     "bin",
     "lib",
     "typings/babel-parser.d.ts",
-    "index.cjs",
-    "types"
+    "index.cjs"
   ],
   "engines": {
     "node": ">=6.0.0"
   },
   "dependencies": {
-    "@babel/types": "^7.26.10"
+    "@babel/helper-validator-identifier": "^7.25.9"
   },
   "devDependencies": {
-    "@babel/code-frame": "^7.26.2",
     "@babel/core": "^7.27.1",
-    "@babel/helper-check-duplicate-nodes": "^7.25.9",
-    "@babel/helper-fixtures": "^7.26.0",
-    "@babel/helper-string-parser": "^7.25.9",
-    "@babel/helper-validator-identifier": "^7.25.9",
     "@babel/plugin-proposal-decorators": "^7.27.1",
-    "@babel/preset-env": "^7.27.1",
+    "@babel/plugin-proposal-class-properties": "^7.27.1",
     "@babel/preset-typescript": "^7.27.1",
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-commonjs": "^28.0.3",
     "@rollup/plugin-node-resolve": "^16.0.1",
     "@rollup/plugin-terser": "^0.4.4",
-    "@types/charcodes": "^0.2.2",
-    "charcodes": "^0.2.0",
     "rollup": "^4.40.1",
-    "tslib": "^2.8.1"
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
   },
   "type": "module"
 }
