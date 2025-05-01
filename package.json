@@ -1,6 +1,6 @@
 {
-  "name": "@babel/parser",
-  "version": "7.26.10",
+  "name": "@kwangechi/modified-parser",
+  "version": "1.0.1",
   "description": "A Modified version of the Babel parser",
   "author": "The Babel Team (https://babel.dev/team) && Rachel Karanja (https://github.com/KWangechi)",
   "homepage": "https://babel.dev/docs/en/next/babel-parser",
