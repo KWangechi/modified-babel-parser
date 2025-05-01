@@ -2,11 +2,11 @@
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",
+    "rootDir": "src",
     "declaration": true,
     "declarationMap": true,
     "emitDeclarationOnly": true,
-    "declarationDir": "./dts",
-    "moduleResolution": "Bundler",
+    "moduleResolution": "node",
     "esModuleInterop": true,
     "isolatedModules": true,
     "allowImportingTsExtensions": true,
@@ -14,9 +14,10 @@
     "resolveJsonModule": true,
     "noImplicitThis": true,
     "noImplicitAny": true,
-    "strictBindCallApply": true,
-    "incremental": true
+    "incremental": true,
+    "allowSyntheticDefaultImports": true,
+    "typeRoots": ["./types", "./node_modules/@types", "./node_modules/@babel/types"],
   },
-  "include": ["src/**/*.ts"],
+  "include": ["src/**/*.ts", "src/**/*.cts", "src/**/*.d.ts", "types/**.d.ts"],
   "compileOnSave": true
 }

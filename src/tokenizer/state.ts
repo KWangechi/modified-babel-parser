@@ -28,7 +28,7 @@ export const enum LoopLabelKind {
   Switch = 2,
 }
 
-declare const bit: import("../../../../scripts/babel-plugin-bit-decorator/types.d.ts").BitDecorator<State>;
+declare const bit: import("../../types/babel-plugin-bit-decorator.d.ts").BitDecorator<State>;
 
 export default class State {
   @bit.storage flags: number;
