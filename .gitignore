@@ -1,2 +1,7 @@
 node_modules
 .rollup.cache
+
+src
+package-lock.json
+rollup.config.js
+tsconfig.json
