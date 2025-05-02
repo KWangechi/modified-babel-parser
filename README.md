@@ -5,4 +5,4 @@ A modified version of [@babel/parser](https://babel.dev/docs/en/babel-parser) th
 ## Installation
 
 ```bash
-npm install @kwangechi/modified-parser
+npm install @kwangechi/modified-babel-parser
