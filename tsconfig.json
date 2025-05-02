@@ -16,8 +16,6 @@
     "noImplicitAny": true,
     "incremental": true,
     "allowSyntheticDefaultImports": true,
-    "typeRoots": ["./types", "./node_modules/@types", "./node_modules/@babel/types"],
   },
-  "include": ["src/**/*.ts", "src/**/*.cts", "src/**/*.d.ts", "types/**.d.ts"],
-  "compileOnSave": true
+  "include": ["src/**/*.ts"]
 }
