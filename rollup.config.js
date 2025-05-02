@@ -9,12 +9,19 @@ export default {
   output: [
     {
       file: "lib/index.js",
-      format: "cjs",
+      format: "es",
       sourcemap: true,
     },
+    {
+      file: "lib/index.cjs",
+      format: 'cjs'
+    }
   ],
   plugins: [
-    // Process TypeScript files
+    resolve({
+      preferBuiltins: true,
+    }),
+    commonjs(),
     babel({
       babelrc: false,
       babelHelpers: "bundled",
@@ -22,17 +29,10 @@ export default {
       exclude: ["node_modules/**"],
       parserOpts: { sourceType: "module" },
       presets: [
-        
         [
           "@babel/preset-typescript",
           {
             allowDeclareFields: true,
-          },
-        ],
-        [
-          "@babel/preset-env",
-          {
-            targets: "maintained node versions",
           },
         ],
       ],
@@ -42,15 +42,10 @@ export default {
           "@babel/plugin-proposal-decorators",
           {
             version: "2021-12",
-            // decoratorsBeforeExport: true
           },
         ],
       ],
     }),
-    resolve({
-      preferBuiltins: true,
-    }),
-    commonjs(),
     terser(),
   ],
 };
